@@ -1,7 +1,7 @@
 // import properties from '@/data/properties.json';
 import React from 'react';
-import PropertyCard from '@/components/PropertyCard';
-import { fetchProperties } from '@/utils/request';
+import PropertyCard from '../../components/PropertyCard';
+import { fetchProperties } from '../../utils/request';
 
 const PropertiesPage = async () => {
 	const properties = await fetchProperties();

@@ -1,8 +1,8 @@
 // import properties from '@/data/properties.json';
 import React from 'react';
-import PropertyCard from '@/components/PropertyCard';
+import PropertyCard from '../components/PropertyCard';
 import Link from 'next/link';
-import { fetchProperties } from '@/utils/request';
+import { fetchProperties } from '../utils/request';
 
 const HomeProperties = async () => {
 	const properties = await fetchProperties();

@@ -7,7 +7,8 @@ async function fetchProperties() {
 		if (!apiDomain) {
 			return [];
 		}
-		const res = await fetch(`${apiDomain}/properties`);
+		const res = await fetch(`${apiDomain}/properties`, {cache: 'no-store'});
+		console.log('Raw data: ',res)
 
 		if (!res) {
 			throw new Error('Failed to fetch data!');
@@ -22,7 +23,7 @@ async function fetchProperties() {
 // Fetch SINGLE PROPETRIES
 async function fetchProperty(id) {
 	try {
-		// Hndle the case where the domain is not available yet
+		// Handle the case where the domain is not available yet
 		if (!apiDomain) {
 			return null;
 		}

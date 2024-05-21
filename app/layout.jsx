@@ -1,7 +1,7 @@
-import '@/assets/styles/global.css';
-import AuthProvider from '@/components/AuthProvider';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
+import '../assets/styles/global.css';
+import AuthProvider from '../components/AuthProvider';
+import Footer from '../components/Footer';
+import Navbar2 from '../components/Navbar2';
 
 export const metadata = {
 	title: 'PropertyPulse | Find The Perfect Rental',
@@ -12,14 +12,14 @@ export const metadata = {
 const MainLayout = ({ children }) => {
 	return (
 		<html land="en">
-				<AuthProvider>
+			<AuthProvider>
 				<body>
-					<Navbar />
+					<Navbar2 />
 					<main>{children}</main>
 					<Footer />
 				</body>
-		</AuthProvider>
-			</html>
+			</AuthProvider>
+		</html>
 	);
 };
 

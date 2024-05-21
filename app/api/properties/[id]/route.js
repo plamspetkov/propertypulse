@@ -1,5 +1,5 @@
-import connectDB from '@/config/databse';
-import Property from '@/models/Property';
+import connectDB from '../../../../config/databse';
+import Property from '../../../../models/Property';
 
 // GET /api/properties/:id
 export const GET = async (request, { params }) => {

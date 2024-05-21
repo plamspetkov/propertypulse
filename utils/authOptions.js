@@ -1,5 +1,5 @@
-import connectDB from '@/config/databse';
-import User from '@/models/User';
+import connectDB from '../config/databse';
+import User from '../models/User';
 
 import GoogleProvider from 'next-auth/providers/google';
 
