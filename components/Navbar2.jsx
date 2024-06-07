@@ -250,6 +250,9 @@ const Navbar2 = () => {
 							className={`${
 								pathname === '/' ? 'bg-gray-900' : ''
 							} text-white  hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2`}
+							onClick={()=> {
+								setIsMobileMenuOpen(false)
+							}}
 						>
 							Home
 						</Link>
@@ -258,6 +261,9 @@ const Navbar2 = () => {
 							className={`${
 								pathname === '/properties' ? 'bg-gray-900' : ''
 							} text-white  hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2`}
+							onClick={()=> {
+								setIsMobileMenuOpen(false)
+							}}
 						>
 							Properties
 						</Link>
@@ -268,6 +274,9 @@ const Navbar2 = () => {
 								className={`${
 									pathname === '/properties/add' ? 'bg-gray-900' : ''
 								} text-white  hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2`}
+								onClick={()=> {
+									setIsMobileMenuOpen(false)
+								}}
 							>
 								Add Property
 							</Link>

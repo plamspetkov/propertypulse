@@ -10,7 +10,7 @@ export const GET = async (request) => {
 
     const properties = await Property.find({});
 
-    return new Response.json(properties);
+    return Response.json(properties);
   } catch (error) {
     console.log(error);
     return new Response("Something went wrong", { status: 500 });
