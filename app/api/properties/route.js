@@ -8,9 +8,21 @@ export const GET = async (request) => {
   try {
     await connectDB();
 
-    const properties = await Property.find({});
+    const page = request.nextUrl.searchParams.get('page') || 1
+    const pageSize = request.nextUrl.searchParams.get('pageSize') || 3
 
-    return Response.json(properties);
+    const skip = (page - 1) * pageSize
+
+    const total = await Property.countDocuments({})
+
+    const properties = await Property.find({}).skip(skip).limit(pageSize);
+
+    const result = {
+      total,
+      properties
+    }
+
+    return Response.json(result);
   } catch (error) {
     console.log(error);
     return new Response("Something went wrong", { status: 500 });
