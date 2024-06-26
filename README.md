@@ -2,9 +2,9 @@
 Property Pulse is a platform that facilitates property rental, property listing, bookmarking, and communication between property owners and potential renters.
 
 ## Table of Contents
-Description
-Installation
-Usage
+1. Description
+2. Installation
+3. Usage
 
 ## Description
 Property Pulse is a web application built with Next.js, MongoDB, and other technologies. It allows users to:
