@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Property Pulse
+Property Pulse is a platform that facilitates property rental, property listing, bookmarking, and communication between property owners and potential renters.
 
-## Getting Started
+## Table of Contents
+1. Description
+2. Installation
+3. Usage
+4. Live
 
-First, run the development server:
+## Description
+Property Pulse is a web application built with Next.js, MongoDB, and other technologies. It allows users to:
 
-```bash
+- Rent properties
+- Post properties for rent
+- Bookmark favorite properties
+- Send messages to property owners
+
+## Installation
+1. Clone this repository:
+
+```
+git clone https://github.com/plamspetkov/propertypulse.git
+```
+2. Install dependencies:
+
+```
+cd propertypulse
+npm install
+```
+3. Set up environment variables (e.g., for Google login, Cloudinary, and Mapbox).
+4. Run the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
+Visit the application at http://localhost:3000.
+Log in using your Google account to access the full functionality.
+Explore properties, bookmark your favorites, and communicate with property owners.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Live
+You can visit the application here => [Live](https://propertypulse-five.vercel.app/)
