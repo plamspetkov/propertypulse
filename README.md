@@ -5,6 +5,7 @@ Property Pulse is a platform that facilitates property rental, property listing,
 1. Description
 2. Installation
 3. Usage
+4. Live
 
 ## Description
 Property Pulse is a web application built with Next.js, MongoDB, and other technologies. It allows users to:
@@ -37,3 +38,6 @@ npm run dev
 Visit the application at http://localhost:3000.
 Log in using your Google account to access the full functionality.
 Explore properties, bookmark your favorites, and communicate with property owners.
+
+## Live
+You can visit the application here => [Live](https://propertypulse-five.vercel.app/)
